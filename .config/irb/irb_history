@@ -1,0 +1,117 @@
+require 'securerandom'\
+SecureRandom.hex(32)
+require 'securerandom'\
+SecureRandom.hex(16)
+require 'securerandom'\
+SecureRandom.hex(16).size
+puts SecureRandom.hex(16)
+quit
+require 'securerandom'\
+puts SecureRandom.hex(16)
+require 'securerandom'\
+puts SecureRandom.hex(16)
+require 'secretrandom'
+require 'randomsecret'
+require 'secretrandom'
+require 'securerandom'
+SecureRandom.hex(16)
+puts SecureRandom.hex(16)
+Student.find_by_name "Anthony"
+a = Student.find_by_name "Anthony"
+a.grades
+a.grades
+exit
+exit
+a = Student.find_by_name "Anthony"
+math = Course.find_by_name "Math 101"
+math = Course.find_by_title "Math 101"
+a.grades.create(course: math, score: 5)
+a.enrollments
+a.enrollments.find_by_course(math)
+a.enrollments.find(course: )
+a.enrollments.\
+;
+a.enrollments.\
+;
+a.enrollments
+a.enrollments.where(course: math)
+a.enrollments.find(course: math)
+a.enrollments.find_by_course(course: math)
+a.enrollments.first(course: math)
+a.courses
+exit
+a = Student.find_by_name "Anthony"
+exit
+a = Student.find_by_name "Anthony"
+exit
+a = Student.find_by_name "Anthony"
+a.
+a = Student.find_by_name "Anthony"
+exit
+a = Student.find_by_name "Anthony"
+a.courses
+a.enrollments
+exit
+a = Student.find_by_name "Anthony"
+a.courses.map(&:title)
+math = Courses.find_by_title('Math 101')
+math = Course.find_by_title('Math 101')
+rdb  = Course.find_by_title('RDB 251')
+a.add_grade(math,5)
+exit
+a = Student.find_by_name "Anthony"
+rdb  = Course.find_by_title('RDB 251')
+math = Course.find_by_title('Math 101')
+a.add_grade(math,5)
+a.grades
+a.add_grade(rdb,2)
+exit
+Courses.all(joins :enrollments, \
+  :group => "course.id", \
+  :having => "count(enrollment.id) >= 0")
+Course.all(joins :enrollments, \
+  :group => "course.id", \
+  :having => "count(enrollment.id) >= 0")
+Course.all(joins: :enrollments, \
+  :group => "course.id", \
+  :having => "count(enrollment.id) >= 0")
+\
+  :group => "course.id", \
+  :having => "count(enrollment.id) >= 0")
+Course.first.entrollments.count
+Course.first.enrollments.count
+Course.first.enrollments.count
+Course.first.enrollments.size
+Course.preload(:enrollments).first.enrollments.size
+Course.join(:enrollments).first.enrollments.size
+Course.joins(:enrollments).first.enrollments.size
+Course.joins(:enrollments).first.enrollments.count
+Course.joins(:enrollments).map{|x|x.enrollments.count}
+Course.eager_load(:enrollments).map{|x|x.enrollments.count}
+Course
+Course.joins(:enrollments)
+Course.joins(:enrollments).group_by("course.id").count
+Course.joins(:enrollments).group_by("course.id").count
+Course.joins(:enrollments).group_by_id
+Course.joins(:enrollments).group_by
+Course.joins(:enrollments).group('course.id')
+Course.left_joins(:enrollments).group('course.id')
+Course.left_joins(:enrollments).select('course.id as id').group('course.id')
+Course.left_joins(:enrollments).select('course.id as id, count(enrollment.id) as cnt').group('course.id')
+Course.left_joins(:enrollments).select('course.id as id, count(enrollment.id) as cnt').group('course.id').order('cnt')
+a = Course.left_joins(:enrollments).select('course.id as id, count(enrollment.id) as cnt').group('course.id').order('cnt')
+a.first
+a = Course.left_joins(:enrollments).select('courses.id as id, count(enrollments.id) as cnt').group('course.id').order('cnt')
+a.first
+a = Course.left_joins(:enrollments).select('courses.id as id, count(enrollments.id) as cnt').group('courses.id').order('cnt')
+a.first
+a.to_a
+a = Course.left_joins(:enrollments).select('courses.id as id, count(enrollments.id) as cnt').group('courses.titexir').order('cnt')
+a.first.cnt
+a.first.id
+a.first.title
+a.first.cnt
+a.first
+exit
+Students.all.size
+Student.all.size
